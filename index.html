@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hands on 1 js</title>
+    <style>
+        *{
+            background-color: aqua;
+        }
+      ul {
+        color: rgb(246, 27, 15);
+      }
+      #HEAD{
+        text-align: center;
+        color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="HEAD">JAVA SCRIPT HANDS ON 1 </h1>
+    <h1>
+      <ol>
+        <li><h2>Add two Numbers</h2></li>
+        <ul>
+          <li>
+            You are provided with two numbers A and B . Your task is to add
+            these two numbers.
+          </li>
+        </ul>
+        <pre>
+ ANS-1: 
+const AddTwoNumbers = (a,b) => {
+  
+            return a+b; 
+              
+          };</pre
+        >
+        <li><h2>Find if the conditions are obeyed or not?</h2></li>
+        <ul>
+          <li>
+            You are given two number first as A and second as B and check if
+            both conditions ( A < 10 and A > B ) are satisfied or not with the
+            help of operators.
+          </li>
+        </ul>
+        <pre>
+ANS-2: 
+const Is_Valid = (a,b) => {
+            return  (a<10) && (a>b);
+            
+          };
+          </pre
+        >
+        <li><h2>Check the conditions</h2></li>
+        <pre>
+            <ul><li>You are given two numbers 
+                A
+                 and 
+                B
+                . You need to do the following checks:
+                
+                if both are divisible by 10 console true.
+                if both are not divisible by 10 console false.
+                if one of them only is divisible by 10 console true.
+                Use operator to do this.</li></ul>
+                <pre>ANS-3: 
+const Check = (A, B) => 
+            {
+              return  (A%10===0) || (B%10===0);
+            
+            };</pre>
+        <li><h2>Find the first digit of a 4 digit number</h2></li>
+        <pre>
+            <ul><li>You are provided a four digit number N only. Your task is to print out the first digit of that number.</li></ul>
+ANS-4: 
+const First_Digit = (n) => {
+  
+            return Math.floor(n/1000);
+            
+         };</pre>
+        <li><h2>Find the Last digit of a 4 digit number</h2></li>
+        <pre>
+            <ul><li>You are provided a four digit number N only. Your task is to print out the last digit of that number.</li></ul>
+ANS-5:             
+const Last_Digit = (n) => {
+  
+            return n%10
+             
+          };
+          </pre>
+        <li><h2>Find the Remainder</h2></li>
+        <ul>
+          <li>
+            You are provided with two numbers A and B where A as divisor and B
+            as dividend.Your task is find the remainder.
+          </li>
+        </ul>
+        <pre>ANS-6: 
+            const Find_the_remainder = (a,b) => {
+              return b%a;
+                
+            };</pre
+        >
+        <li><h2>Multipy two Numbers</h2></li>
+        <ul>
+          <li>
+            You are provided with two numbers A and B . Your task is to multiply
+            these two numbers.
+          </li>
+        </ul>
+        <pre>ANS-7: 
+            const Multiply_two_number = (a,b) => {
+              return a*b;
+                
+            };
+            </pre
+        >
+        <li><h2>Marks Calculator</h2></li>
+        <ul>
+          <li>
+            Shyam has got his marks in three subjects as A , B , and C (out of
+            100).Write a program to calculate his total marks and his average.
+          </li>
+        </ul>
+
+        <pre>ANS-8: 
+            const Sum = (A, B, C) => 
+            {
+             return (A+B+C);
+            };
+            
+            const Average = (A, B, C) => 
+            {
+             return (A+B+C)/3;
+            };
+            </pre
+        >
+      </ol>
+    </h1>
+  </body>
+</html>
