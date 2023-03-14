@@ -855,10 +855,20 @@ for(let i=0; i < N; i++){
                     You must determine how many ways she can divide the chocolate</li></ul>
 
                     <pre>
-                      function Birthday_Game(arr,D ,M) {
- 
-
+                      
+                      let N= arr.length;
+                      let count=0;
+                      for (let i=0;i < N-M+1;i++){
+                        let sum=0;
+                        for(let j=i;j < M+i;j++){
+                          sum+=arr[j];
+                        }
+                        if (sum===D)
+                        count++;
                       }
+                      return count;
+                      }
+
                     </pre>
    </ol>
 
