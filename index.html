@@ -1173,6 +1173,141 @@ var Count_Consonants= (S) =>
 
     
     
+    
+    
+    
+    
+    
+    <h1 id="HEAD">JAVA SCRIPT HANDS ON 6</h1>
+   <h2 id="HEAD">problem solving</h2>
+    
+    <ol>
+      <li><h1>Find the Smaller Angle</h1></li>
+      <ul><li>PrepBuddy has an analog clock which consists of two hands one for hour and another for minute. She wants to calculate the shorter angle formed between hour and minute hand at any given time.</li></ul>
+
+      <pre>
+        var Minimal_Angle = (h, m) => 
+{
+  h=h%12;
+  let hour =(h*360)/12 + (m*360)/(12*60);
+  let min = (m*360)/60;
+  let angle =Math.abs(hour-min);
+  
+  
+  if (angle>180){
+    return 360-angle;
+    
+  }else{
+    return angle;
+  }
+};
+      </pre>
+
+
+      <li><h1>Check whether the year is Leap year or not.
+      </h1></li>
+      <ul><li>Write a program which takes an year 
+        N
+         as input from the user and find out whether the given year is a Leap Year or not.</li></ul>
+          <pre>
+            var Check_Leap = (year) => 
+{
+  if (year % 400===0 && year%100 ===0){
+    return 'Leap Year'
+  }
+  else if (year%4===0 && year%100 !==0){
+    
+    return 'Leap Year'
+  }
+  else{
+    return "Non Leap Year"
+  }
+ 
+  
+
+};
+          </pre>
+
+
+          <li><h1>Perfect Number Check.</h1></li>
+          <ul><li>Have you heard of Perfect numbers? If not let me tell you what is it, Perfect Numbers are integers that are equal to the sum of all its divisors except that number itself.
+
+            Now, You are given an integer 
+            N
+            , write a program to check whether the given number is a Perfect Number or not.</li></ul>
+
+            <pre>
+              var Perfect_Check = (N) => 
+{
+   let ans=[];
+   let j=0;
+   for(let i=1; i< N; i++){
+     if(N%i===0)
+     ans[j]=ans[j]+i;
+     
+   }
+   if(ans[j]===N)
+      return "YES";
+     else
+     return "NO";
+     
+     
+        
+};
+
+            </pre>
+
+          <li><h1>Reverse a Number.</h1></li>
+          <ul><li>Write a program which takes a numebr 
+            N
+             as input from the user and You need to reverse the number.</li></ul>
+
+             <pre>
+               
+var Reverse_Number = (N) => 
+{
+  let ans = Number(String(N).split('').reverse().join(''));
+  return ans;
+};
+ 
+
+             </pre>
+
+
+          <li><h1>Substring Check.</h1></li>
+          <ul><li>You are given two strings 
+            S
+            1
+             and 
+            S
+            2
+            , you need to check whether the string S1 is a substring of string S2 or not.</li></ul>
+
+            <pre>
+              var Substring_Check = (S1, S2) => 
+{
+    let str = S1.indexOf(S2);
+  if(str!==-1){
+    return "YES";
+  }
+  else{
+    return "NO";
+  }
+     
+   
+};
+ 
+            </pre>
+
+
+
+
+
+
+
+    </ol>  
+  
+    
       
     
     
